@@ -54,13 +54,4 @@ const routes: IRouter[] = [
 const allRoutes = [...routes,...oneDemo,...shop,...list,...form,...store,...customer];
 
 
-
-allRoutes.forEach((tit:IRouter) => {
-    if (tit.path === '/login' || tit.path === '/' ) {
-      return
-    }else{
-      // console.log(tit);
-      tit.auth = true;
-    }
-});
 export default allRoutes;

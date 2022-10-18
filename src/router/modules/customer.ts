@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import { UserCircleIcon } from 'tdesign-icons-react';
+import { UserTalkIcon } from 'tdesign-icons-react';
 import { IRouter } from '../index';
 
 const customer: IRouter[] = [
@@ -8,7 +8,7 @@ const customer: IRouter[] = [
     isFullPage: true,
     meta: {
       title: '客服',
-      Icon: UserCircleIcon,
+      Icon: UserTalkIcon,
     },
     Component: lazy(() => import('pages/Customer'))
   },

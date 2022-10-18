@@ -1,12 +1,14 @@
 import React from 'react'
 import { lazy } from 'react';
+import { CartIcon } from 'tdesign-icons-react';
 
 import { IRouter } from '../index'
 const shop:IRouter[] = [
     {
         path:"/shop",
         meta:{
-            title:'商品'
+            title:'商品',
+            Icon: CartIcon,
         },
         children:[
             {
